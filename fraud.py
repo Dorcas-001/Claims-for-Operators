@@ -282,7 +282,7 @@ def display_fraud():
             selected_business_lines = st.multiselect(
                 "Select Outlier Level",
                 options=business_lines,
-                default=[business_lines[2]] if business_lines else None,  # Default to the first status if available
+                default=[business_lines[0]] if business_lines else None,  # Default to the first status if available
                 key="outlier_multislect"
             )
             
